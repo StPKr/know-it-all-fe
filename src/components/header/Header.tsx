@@ -1,18 +1,21 @@
-import Logo from "./Logo";
-import NavButton from "./NavButton";
+import logo from "../../assets/logo.png";
 
 export default function Header() {
   return (
-    <header className="w-full bg-blue-600 text-white shadow-md px-4 py-3 flex items-center justify-between fixed top-0 left-0 w-full shadow-md">
-      <div className="flex items-center gap-3">
-        <Logo />
-        <span className="text-xl font-bold">QuizMaster</span>
+    <header className="w-full flex items-center justify-between px-6 py-4 bg-white shadow-md">
+      <div className="flex items-center gap-2">
+        <img 
+          src={logo} 
+          alt="Logo"
+          className="w-10 h-10 object-contain"
+        />
+        <h1 className="text-xl font-bold text-gray-800">My App</h1>
       </div>
 
       <nav className="flex items-center gap-4">
-        <NavButton label="Login" />
-        <NavButton label="Topics" />
-        <NavButton label="Profile" />
+        <button className="text-gray-700 hover:text-blue-500">Home</button>
+        <button className="text-gray-700 hover:text-blue-500">Topics</button>
+        <button className="text-gray-700 hover:text-blue-500">Login</button>
       </nav>
     </header>
   );

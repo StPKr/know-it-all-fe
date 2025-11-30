@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .landing-container {
+    @apply min-h-screen flex flex-col items-center justify-center bg-linear-to-b from-blue-800 to-blue-900
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes can be added here */
+}
